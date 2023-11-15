@@ -1,7 +1,5 @@
 import OpenAI from "npm:openai";
 const openai = new OpenAI();
-openai.baseURL = "https://cn.gptapi.asia/v1"
-console.log(openai.baseURL)
 async function main(model,context,question) {
   const completion = await openai.chat.completions.create({
     // messages: [{ role: "system", content: question }],
